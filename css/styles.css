@@ -1,0 +1,461 @@
+body {font-family: 'Roboto', sans-serif;font-size:1em;line-height:2em;
+height: 100%;
+padding-bottom: 0px;
+}
+
+/*---NAVIGATION---*/
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+}
+nav ul li {
+    font-size:1.5em;
+}
+.navbar-inverse {
+    background-color: #DC352E;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+div .ordertotal {
+    margin-left: 50%;
+}
+
+/* HIDING A SECTION */
+
+#pizzaorder {
+    overflow: hidden;
+}
+.carousel {
+  height: 500px;
+  margin-top: -20px;
+}
+.carousel-inner .btn {
+    background-color: #DC352E;
+}
+
+.carousel-caption .btn-success {
+    border: none;
+    background-color: #DC352E;
+    border-color: #DC352E;
+    
+}
+
+.carousel-inner h1 {
+    font-size: 55px;
+}
+.carousel-inner h1, .carousel-inner p{
+    color: #fff;
+}
+.carousel-inner p:nth-child(2) {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/*----HOME-----*/
+div .fresh_ingredients {
+    margin-left: 20%;
+}
+
+div .fresh_ingredients h2 {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: -55px;
+    margin-left: 20%;
+}
+div .fresh_ingredients .img-circle {
+    border-radius: 20%;
+}
+
+div .fresh_ingredients a {
+    margin-left: 25%;
+    margin-top: 8%;
+    font-size: 35px;
+}
+
+/*----ORDER ONLINE------*/
+.pagination {
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.pagination > li > a {
+    padding: 30px 30px;
+    color: #fff;
+    background-color: #DC352E;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+
+.pagination > li > a:hover {
+    color: #fff;
+/*    background-color: #dcae1d;*/
+    background-color: #f7c331;
+    border-color:  #fff;
+}
+
+.pagination > .active > a {
+    color: #fff;
+    background-color: #f7c331;
+    border: 1.5px solid #fff;
+}
+
+.pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #f7c331;
+    border: 1.5px solid #fff;
+}
+
+/*FORMS*/
+legend, label {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    margin-top: 4%;
+    
+}
+
+.panel {
+    background-color: #DC352E;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.panel h1 {
+  text-align: center;
+}
+
+div h3 {
+    margin-left: 28%;
+}
+
+div .next .btn {
+    background-color: #DC352E;
+    border-color: #DC352E;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+
+
+
+div #placeorder .btn {
+    padding: 4% 10%;
+}
+
+.btn-group-lg >.btn, .btn-lg {
+    padding: 40px 40px;
+    font-size: 25px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+
+/*------DELIVERY ADDRESS-----*/
+.center-block {
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+#deliveryinfo {
+   margin-top: 1%;
+   margin-left: 30%;
+    
+}
+#lname_error, #fname_error, #email_error, #phone_error, #staddress_error, #city_error, #state_error, #zcode_error, #cardname_error, #cardNo_error, #cvcNo_error   {
+	margin: 3px auto;
+    color: #DC352E;
+}
+
+.innerHTML{
+	margin-top: 2px;
+	height: 28px;
+	font-size: 14px;
+    color: #DC352E;
+	padding: 1px;
+	width: 100%;
+
+}
+
+div #specifyaddress {
+   margin-top: -15px;
+}
+div #specifyaddress .input-group .form-control {
+    display: block;
+    width: 50%;
+    border-radius: 0;
+    margin-top: 1px;
+}
+
+div #BillingSpecifyAddress .show {
+    display: block;
+    width: 50%;
+    border-radius: 0;
+    margin-top: 1px;
+    text-align: left;
+    margin-left: 0;
+}
+
+
+/*CRUST AND SIZES*/
+
+#online_order_pagination {
+    margin-top: 0;
+    margin-left: 15%;
+}
+#online_order_pagination nav {
+    
+}
+#crust_sizes_heading {
+    margin-left: 30%;
+}
+
+.btn-group-radio {
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 20px;
+}
+.btn-group-radio input[type=radio] {
+  display: none;
+}
+.btn-group .btn {
+    margin: 2px 15px;
+}
+
+.btn-group >.btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >.btn:last-child:not(:first-child), .btn-group >.btn:first-child:not(:last-child):not(.dropdown-toggle){
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1.15px solid #333;
+    background-color: #fff;
+    margin-bottom: 10%;
+}
+
+.btn-group-radio label {
+    padding-top: 8.5%;
+    color: #DC352E;
+    font-size: 28px;
+   font-weight: 500;
+    cursor: pointer;
+}
+.btn-group-radio label:hover {
+     color: #DC352E;
+}
+
+.crust_sizes {
+    text-align: center;
+    margin-top: -55px;
+    margin-bottom: 5px;
+    margin-left: 13%;
+    font-size: 18px;
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle):active, .btn-group >.btn:last-child:not(:first-child):active, .btn-group >.btn:first-child:not(:last-child):not(.dropdown-toggle):active {
+    background-color: #DC352E;
+    opacity: 0.45;
+}
+
+.show {
+    text-align: center;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 224px;
+}
+
+/*------END CRUST AND SIZES------*/
+
+/*-------CHEESE AND SAUCES------*/
+
+#cheese_sauce_heading {
+   margin-top: 5%;
+   margin-left: 28%;
+}
+div #cheese {
+ margin-top: 2%;
+margin-left: 28%;
+}
+
+div #sauce {
+  margin-top: 10%;
+ margin-left: 28%;
+}
+
+#cheese-choices, #sauce-choices  {
+ padding: 8px 20px;
+ font-size: 18px;
+ text-align: center;
+ margin-left: 40%;
+}
+
+
+
+/*-------END CHEESE AND SAUCES------*/
+
+/*--- TOPPINGS ------*/
+
+div #meat_veggies {
+    margin-top: 10%;
+    margin-left: 28%;
+}
+div #meat_toppings, div #veggie_toppings {
+  margin-top: 0;
+  margin-left: 26.5%;
+}
+
+.meat, .veggies {
+    margin-left: 30%;
+    margin-bottom: 3%;
+}
+
+/* CHECKBOX IMAGE STYLE */
+.image-checkbox input[type="checkbox"] {
+ display: none;
+}
+.image-checkbox {
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+.image-checkbox-checked
+    {
+        border: 2px solid #DC352E;
+    }
+
+/*--- END TOPPINGS ------*/
+.nav .glyphicon {
+    float:left;
+    margin-left: 35px;
+    font-size: 28px;
+}
+div .ordertotal {
+    margin-left: 2px;
+     margin-top: -15px;
+    font-size:16px;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #DC352E;
+}
+
+/*------CHECK OUT------*/
+
+#checkout_payment, #checkout_billing  {
+    
+}
+#billingaddress {
+    margin: 0 auto;
+}
+#payment_heading {
+   margin-top: -10px;
+   margin-left: 30%;
+   margin-bottom: -10%;
+}
+ #billing_heading  {
+   margin-left: 30%;
+}
+
+#same_delivery_info  {
+    margin-top: -35px;
+   margin-left: 30%;
+   
+}
+
+#checkout_heading {
+   margin-top: 5%;
+   margin-left: 28%;
+}
+div #expirationInfo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -2%; 
+}
+#expMonth, #expYear {
+    padding: 8px 14px;
+}
+div #expirationInfo select {
+    font-size: 12px;
+}
+    
+/*------END CHECK OUT------*/
+
+/*-----FOOTER -----*/
+
+footer { background-color:#333; height:191px; width:100%;}
+.footercontent { 
+    margin-top:25px; 
+    margin-left:28%; 
+    padding: 0 36px;
+}
+.logofooter { 
+    margin-bottom:10px; font-size:25px; color:#f7c331; font-weight:700;
+}
+.footercontent p {
+    color:#f7c331; font-size:14px; 
+    margin-bottom:15px;
+}
+.footercontent .fa-map-pin, .footercontent .fa-phone,  .footercontent .fa-envelope {
+    color: #fff;
+    font-size: 15px;
+}
+.social-media {margin-top:50px;
+}
+.social-media a {
+color:#f7c331;
+}
+
+.social-media a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+ .copyright p { 
+     font-size: 12px;
+     text-align:center; color:#FFF; padding:10px 0; margin-bottom:0px;}
+
+/* ------ FOOTER BORDER TOP ----- */
+.zigzag {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.zigzag:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -1px;
+  width: 100%;
+  height: 10px;
+}
+.footer-border-top{
+  background: #333;
+}
+.footer-border-top:before {
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #333 33.333%, #333 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #333 33.333%, #333 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+}
+
+/* ------ END FOOTER BORDER TOP ----- */
+
+/*-----END FOOTER -----*/
+
