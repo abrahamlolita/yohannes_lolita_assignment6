@@ -304,34 +304,34 @@ document.getElementById("cardNo_error").innerHTML = cardNumber_validation();
 
 
 
- Same as Delivery information
-document.getElementById("same_delivery").addEventListener("click", billingAddrValidation, true);
-function billingAddrValidation(checked) {  
-if (checked) {  
-document.getElementById('BillingFirstName').value = fname.value; 
-document.getElementById('BillingLastName').value = lname.value; 
-document.getElementById('BillingPhoneNumber').value = phone_no.value; 
-document.getElementById('BillingSpecifyList').value = specify_list.value;
-document.getElementById('BillingSpecifyAddress').value = specify_addr.value;
-document.getElementById('BillingAddressNo').value = addr_no.value;
-document.getElementById('BillingAddress').value = staddress.value;   
-document.getElementById('BillingCity').value = city_value.value;   
-document.getElementById('BillingState').value = state_value.value;   
-document.getElementById('BillingZip').value = zcode_value.value;     
-} else {  
-document.getElementById('BillingFirstName').value = '';
-document.getElementById('BillingLastName').value = '';
-document.getElementById('BillingPhoneNumber').value = '';
-document.getElementById('BillingSpecifyList').value = '';
-document.getElementById('BillingSpecifAddress').value = '';
-document.getElementById('BillingAddressNo').value = '';
-document.getElementById('BillingAddress').value = '';
-document.getElementById('BillingCity').value = '';
-document.getElementById('BillingState').value = '';
-document.getElementById('BillingZip').value = '';
-document.getElementById('BillingCountry').value = '';   
-}  
-}  
+//  Same as Delivery information
+// document.getElementById("same_delivery").addEventListener("click", billingAddrValidation, true);
+// function billingAddrValidation(checked) {  
+// if (checked) {  
+// document.getElementById('BillingFirstName').value = fname.value; 
+// document.getElementById('BillingLastName').value = lname.value; 
+// document.getElementById('BillingPhoneNumber').value = phone_no.value; 
+// document.getElementById('BillingSpecifyList').value = specify_list.value;
+// document.getElementById('BillingSpecifyAddress').value = specify_addr.value;
+// document.getElementById('BillingAddressNo').value = addr_no.value;
+// document.getElementById('BillingAddress').value = staddress.value;   
+// document.getElementById('BillingCity').value = city_value.value;   
+// document.getElementById('BillingState').value = state_value.value;   
+// document.getElementById('BillingZip').value = zcode_value.value;     
+// } else {  
+// document.getElementById('BillingFirstName').value = '';
+// document.getElementById('BillingLastName').value = '';
+// document.getElementById('BillingPhoneNumber').value = '';
+// document.getElementById('BillingSpecifyList').value = '';
+// document.getElementById('BillingSpecifAddress').value = '';
+// document.getElementById('BillingAddressNo').value = '';
+// document.getElementById('BillingAddress').value = '';
+// document.getElementById('BillingCity').value = '';
+// document.getElementById('BillingState').value = '';
+// document.getElementById('BillingZip').value = '';
+// document.getElementById('BillingCountry').value = '';   
+// }  
+// }  
   
 
 
