@@ -72,21 +72,21 @@
          
       </div>
     </nav>
-    
     <!------ END STATIC NAVBAR------>  
+    
+    <!-----PAGINATION TABS------>
 <div class="online_order_pagination" id="online_order_pagination">
-<nav>
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a href="deliveryaddress.html">Delivery Address</a></li>
-    <li class="page-item active"><a href="#crust_size">Crust &amp; Sizes</a></li>
-    <li class="page-item"><a href="#cheese_sauce">Cheese &amp; Sauce</a></li>
-    <li class="page-item"><a href="#toppings">Toppings</a></li>
-    <li class="page-item"><a href="#checkout">Check Out</a></li>
+  <ul class="pagination justify-content-center text-center">
+    <li class="page-item" id="deliverypagination"><a href="deliveryaddress.html">Delivery Address</a></li>
+    <li class="page-item" id="crustpagination"><a href="#crust_size">Crust &amp; Sizes</a></li>
+    <li class="page-item" id="cheesepagination"><a href="#cheese_sauce_section">Cheese &amp; Sauce</a></li>
+    <li class="page-item" id="toppingspagination"><a href="#toppings-options">Toppings</a></li>
+    <li class="page-item" id="checkoutpagination"><a href="#checkout_payment">Check Out</a></li>
   </ul>
-  </nav>
-</div>  
+    </div>
+ <!-----END PAGINATION TABS------>
   
-<!--- BEGIN ONLINE ORDER ------>
+<!--- BEGIN PIZZA CONTAINER - ONLINE ORDER ------>
 <div class="container" id="pizzaorder">
 <!--ORDER ONLINE FORM-->
 <form>
@@ -155,7 +155,7 @@
 <div class="row next next-checkout" id="next_cheeseSauce">
   <p><a class="text-center btn btn-lg btn-success" href="#cheese_sauce_heading" role="button"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;Cheese &amp; Sauce</a></p>
   </div>
-</div> <!---END NEXT TO CHEESE AND SAUCES ------>
+<!---END NEXT TO CHEESE AND SAUCES ------>
    
    
   <!---CHEESE AND SAUCES ------>
@@ -313,7 +313,7 @@
     </div>
 
 <!---NEXT TO  NEXT TO CHECKOUT  -->
-<div class=" next container" id="next-checkout">
+<div class="next container" id="next-checkout">
   <p><a class="text-center btn btn-lg btn-success" href="#checkout_payment" role="button"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp;Check Out</a></p>
   </div>
 <!---END NEXT TO CHECKOUT --> 
@@ -321,6 +321,7 @@
 </div><!----END ONLINER ORDER CONTAINER----->
 
 </form> <!--END ORDER ONLINE FORM-->
+
 
 <!---CHECKOUT SECTION ---->
 
@@ -367,27 +368,27 @@
     </select>                          
 </div>
 <div class="col-md-4 form-group">
-          <label class="control-label" for="selectyear">Expiration - Year</label>
-            <select id="expYear" name="expYear" class="input-xlarge">
-              <option>Select Year</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-            </select>
+<label class="control-label" for="selectyear">Expiration - Year</label>
+<select id="expYear" name="expYear" class="input-xlarge">
+  <option>Select Year</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+</select>
     </div>
 </div>
      
@@ -493,21 +494,16 @@
 </div>
 <!--- END CHECK OUT ------>
 
+  </div><!--- END PIZZA CONTAINER - ONLINE ORDER ------>
 
-
-
-</div><!--- END ONLINE ORDER ------>
   <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-  <script src="js/totalprice.js"></script>
-  <script src="js/checkout_script.js"></script>
-  
-  
-  
-<!--  <script src="js/checkout_script.js"></script>-->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/script.js"></script>-->
+<script src="js/totalprice.js"></script>
+<script src="js/checkout_script.js"></script>
    
     <!--- SCRIPT FOR CHECKBOX IMAGE ------>
     <script type="text/javascript">
@@ -537,24 +533,7 @@
         });
     });
     </script>
-   <!--- END SCRIPT FOR CHECKBOX IMAGE ------>
-<!--
-   <script type="text/javascript">
-$(document).ready(function() {
- $("#checkout_payment").hide();
-    $("#cheese_sauce_section").hide();
-    $("#meat_veggies_section").hide();
-    $("#next-checkout").hide();
-    $("#next_cheeseSauce").click(function () {
-    $("#crust_size_section").hide();
-    $("#next-checkout").hide();
-    $("#cheese_sauce_section").show();
-    $("#meat_veggies_section").hide();
-    $("#checkout_payment").hide(); 
-  });
-});
--->
-     
+   <!--- END SCRIPT FOR CHECKBOX IMAGE ------>     
 <script type="text/javascript">
 $(document).ready(function() {
  $("#checkout_payment").hide();

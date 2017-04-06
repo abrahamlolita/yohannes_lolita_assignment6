@@ -77,22 +77,20 @@
     
     <!------ END STATIC NAVBAR------>  
     
- <div class="online_order_pagination" id="online_order_pagination">
- <nav>
-  <ul class="pagination justify-content-center">
-    <li class="page-item active"><a href="deliveryaddress.html">Delivery Address</a></li>
-    <li class="page-item"><a href="#crust_size">Crust &amp; Sizes</a></li>
-    <li class="page-item"><a href="#cheese_sauce">Cheese &amp; Sauce</a></li>
-    <li class="page-item"><a href="#toppings">Toppings</a></li>
-    <li class="page-item"><a href="#checkout">Check Out</a></li>
+ <!-----PAGINATION TABS------>
+<div class="online_order_pagination" id="online_order_pagination">
+  <ul class="pagination justify-content-center text-center">
+    <li class="page-item" id="deliverypagination"><a href="#deliveryaddress">Delivery Address</a></li>
+    <li class="page-item" id="crustpagination"><a href="#crust_size">Crust &amp; Sizes</a></li>
+    <li class="page-item" id="cheesepagination"><a href="#cheese_sauce_section">Cheese &amp; Sauce</a></li>
+    <li class="page-item" id="toppingspagination"><a href="#toppings-options">Toppings</a></li>
+    <li class="page-item" id="checkoutpagination"><a href="#checkout_payment">Check Out</a></li>
   </ul>
-  </nav>
-</div> 
-    
-    <!---DELIVERY ADDRESS ------>
-     
+    </div>
+ <!-----END PAGINATION TABS------>
+ 
+ <!---DELIVERY ADDRESS ------>    
 <div class="container" id="deliveryaddress">
-     
 <div id="deliveryinfo">              
 <div class="panel panel-default col-md-7"><div class="panel-body">
     <h1>Enter Delivery Address</h1></div></div>
@@ -191,12 +189,12 @@
 <!-----NEXT TO CRUST SIZE PRICE SELECTION------->  
                    
   </div>
+   <!---END DELIVERY ADDRESS ------>  
             
   
 
 
 <!------FOOTER------> 
-<!--<footer class="navbar-fixed-bottom">-->
 <!--
   <div class="container-fluid footer-border-top zigzag">
   <div class="container">
@@ -265,12 +263,6 @@
     });
     </script>
    <!--- END SCRIPT FOR CHECKBOX IMAGE ------>
-   
-   <!-- ---->
-   
-     <script type="text/javascript">
- 
-     </script>
    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
