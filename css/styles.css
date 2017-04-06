@@ -26,6 +26,9 @@ nav ul li {
 div .ordertotal {
     margin-left: 50%;
 }
+div #totalPrice {
+    padding: 5%;
+}
 
 /* HIDING A SECTION */
 
@@ -83,7 +86,8 @@ div .fresh_ingredients a {
 
 /*----ORDER ONLINE------*/
 .pagination {
-    margin-top: 5%;
+    margin-top: 3.5%;
+    margin-bottom: 0;
     margin-left: 15%;
 }
 
@@ -137,13 +141,17 @@ legend, label {
 }
 
 div h3 {
-    margin-left: 28%;
+    margin-left: 38%;
+}
+
+div #next_cheeseSauce {
+    margin-left: -50px;
 }
 
 div .next .btn {
     background-color: #DC352E;
     border-color: #DC352E;
-    margin-top: 4%;
+    margin-top: 6%;
     margin-bottom: 5%;
     margin-left: 40%;
 }
@@ -169,7 +177,7 @@ div #placeorder .btn {
 }
 
 #deliveryinfo {
-   margin-top: 1%;
+   margin-top: 5%;
    margin-left: 30%;
     
 }
@@ -222,7 +230,7 @@ div #BillingSpecifyAddress .show {
 }
 
 .btn-group-radio {
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 10%;
     padding: 20px;
 }
@@ -272,7 +280,13 @@ div #BillingSpecifyAddress .show {
     display: block;
     width: 100%;
     border-radius: 5px;
+    margin-bottom: 6%;
     margin-left: 224px;
+}
+
+div #specifyaddress .show {
+    margin-left: 22px;
+    
 }
 
 /*------END CRUST AND SIZES------*/
@@ -280,17 +294,17 @@ div #BillingSpecifyAddress .show {
 /*-------CHEESE AND SAUCES------*/
 
 #cheese_sauce_heading {
-   margin-top: 5%;
-   margin-left: 28%;
+   margin-top: 1%;
+   margin-left: 30%;
 }
 div #cheese {
  margin-top: 2%;
-margin-left: 28%;
+margin-left: 30%;
 }
 
 div #sauce {
   margin-top: 10%;
- margin-left: 28%;
+ margin-left: 30%;
 }
 
 #cheese-choices, #sauce-choices  {
@@ -307,12 +321,12 @@ div #sauce {
 /*--- TOPPINGS ------*/
 
 div #meat_veggies {
-    margin-top: 10%;
-    margin-left: 28%;
+    margin-top: 7%;
+    margin-left: 29.5%;
 }
 div #meat_toppings, div #veggie_toppings {
   margin-top: 0;
-  margin-left: 26.5%;
+  margin-left: 28%;
 }
 
 .meat, .veggies {
