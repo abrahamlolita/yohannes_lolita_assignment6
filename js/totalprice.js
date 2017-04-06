@@ -1,3 +1,12 @@
+// first focus on first name field
+window.addEventListener("load",firstTabfocus, false);
+    function firstTabfocus()  
+      {  
+        "use strict";
+      var crustTab_focus = document.getElementById("crustpagination");
+      crustTab_focus.className = "active";
+      return true;  
+      } 
 // Crust Choices variables
 var hand_tossed = document.getElementById("handtossed");
 var thin_crust = document.getElementById("thincrust");
@@ -92,9 +101,8 @@ function calcTotal() {
             pizzaPrice += priceTopping;
 		}
     }
-    orderTotal.value = pizzaPrice;
-}
-    
+    orderTotal.value = pizzaPrice.toFixed(2);
+}    
 handTossed_price.addEventListener("change", calcTotal);
 thinCrust_price.addEventListener("change", calcTotal);
 newyorkStyle_price.addEventListener("change", calcTotal);
@@ -103,7 +111,7 @@ cheese_price.addEventListener("change", calcTotal);
 sauce_price.addEventListener("change", calcTotal);
 toppingsPrice.addEventListener("click", calcTotal);
     
-// NEXT BUTTON VALIDATION
+// NEXT CHEESE SAUCE BUTTON VALIDATION
 document.getElementById("next_cheeseSauce").addEventListener("click", crustSizeSelection, true);
 function crustSizeSelection() {
     if(hand_tossed.checked) {
@@ -112,6 +120,33 @@ function crustSizeSelection() {
     } else if(gluten_free.checked) { 
     } else {
    window.alert("PLEASE MAKE A SELECTION");
-    } 
-     return false;
+    document.location.href = "onlineorder.html";
+    }
+      return false; 
 }
+
+document.getElementById("next-checkout").addEventListener("click", orderValidation, true);
+ "use strict";
+function orderValidation() {
+    var confirmCheckout;
+    var placeOrder = confirm("Are you finished building your order?");
+    if (placeOrder === true) {
+    document.location.href = "onlineorder.html#checkout_payment";
+  } else {
+//    location.href = "onlineorder.html#order_online";
+      history.go(-1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

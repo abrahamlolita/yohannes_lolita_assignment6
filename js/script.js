@@ -1,11 +1,12 @@
 // first focus on first name field
-window.addEventListener("load",firstfocus, false);
-        function firstfocus()  
-          {  
-            "use strict";
-          var fname_focus = document.pizzaform.firstname.focus();
-          return true;  
-          } 
+window.addEventListener("load",firstdeliveryTabfocus, false);
+function firstdeliveryTabfocus()  
+  {  
+    "use strict";
+  var deliveryTab_focus = document.getElementById("deliverypagination");
+  deliveryTab_focus.className = "active";
+  return true;  
+  } 
 // Delivery Location Information 
 // All input text fields
 var fname = document.getElementById("firstname");
@@ -19,7 +20,6 @@ var addr_no = document.getElementById("addr_no");
 var city_value = document.getElementById("city_value");
 var state_value = document.getElementById("state_value");
 var zcode_value = document.getElementById("zcode_value");
-var next_crust = document.forms.pizzaform.next_crust;
 
 //Setting Event Listeners
 fname.addEventListener("blur", fname_validation, true);
@@ -59,11 +59,11 @@ lname.focus();
 function lname_validation() {
        "use strict";
   var lname_regex = /^[a-zA-Z]+$/;  
-    if(lname_regex.test(lname.value) == false){
+    if(lname_regex.test(lname.value) === false){
          lname_error.innerHTML = "Input contains invalid characters";
         
          lname_error.style.display = "block";
-  if (lname.value == "" ||lname.value == null) {
+  if (lname.value == "" ||lname.value === null) {
      lname_error.innerHTML = "Last name must be filled out";
      lname_error.style.display = "block";
       lname.focus();  
@@ -223,23 +223,60 @@ if(zcode_regex.test(zcode_value.value) == false){
 else {
       zcode_error.style.display = "none";
     }
-//focus on next_crust_size button
-//next_crust.focus();  
-//  return true;  
 }
 
-// NEXT BUTTON VALIDATION
-document.getElementById("next_crust_size_options").addEventListener("click", fname_validation, true);
 
-//document.getElementById("next_crust_size_options").addEventListener("click", crustSizeSelection, true);
-//function crustSizeSelection() {
-//    if(hand_tossed.checked) {
-//    } else if(thin_crust.checked) {
-//    } else if(newyork_style.checked) {
-//    } else if(gluten_free.checked) { 
-//        
+
+ //NEXT CRUST SIZE BUTTON VALIDATION
+document.getElementById("next_crust_size_options").addEventListener("click", deliveryValidation, true);
+function deliveryValidation() {
+       "use strict";
+    if((fname_validation === true) && (lname_validation === true) &&
+   (email_validation === true) && (phone_validation === true) &&(specify_address === true) && (staddress_validation === true) &&(city_validation === true) && (state_validation === true) &&(zcode_validation === true)) {  
+       document.location.href = "onlineorder.html";
+    } else {
+   window.alert("PLEASE PROVIDE DELIVERY ADDRESS INFORMATION");
+   document.location.href = "deliveryaddress.html";
+    } 
+  return false;
+}
+
+//function deliveryValidation() {
+//       "use strict";
+//    var fname_focus = fname.focus();
+//    if(fname_validation === true) {
+//    } else if(lname_validation === true) {
+//    } else if(email_validation === true) {
+//    } else if(phone_validation === true) {
+//    } else if(specify_address === true) {
+//    } else if(staddress_validation === true) { 
+//    } else if(city_validation === true) { 
+//    } else if(state_validation === true) { 
+//    } else if(zcode_validation === true) {  
 //    } else {
-//   window.alert("PLEASE MAKE A SELECTION");
+//   window.alert("PLEASE PROVIDE DELIVERY ADDRESS INFORMATION");
+//   location.href = "deliveryaddress.html";
+//   fname_focus;
+//   return true;  
 //    } 
-//     return false;
+//  return false;
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

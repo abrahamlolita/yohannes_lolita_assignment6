@@ -1,10 +1,10 @@
 // first focus on card on name field
-window.addEventListener("load", crustTypeFocus, false);
-function crustTypeFocus() {
-    "use strict";
-    var crustfocus = document.getElementById("crust_sizes_heading").focus();
-    return true;
-}
+//window.addEventListener("load", crustTypeFocus, false);
+//function crustTypeFocus() {
+//    "use strict";
+//    var crustfocus = document.getElementById("crust_sizes_heading").focus();
+//    return true;
+//}
 //// All input text fields
 var cardname = document.getElementById("cardName");
 var cardNoInput = document.getElementById("cardnumber");
@@ -148,7 +148,7 @@ billingSpecifyList.focus();
  return true;  
 }
 
-////Address type validation
+//Address type validation
 function bSpecify_address() {
     "use strict";
     if (document.getElementById("other").selected) {
@@ -252,20 +252,19 @@ else {
 //CREDIT CARD VALIDATION
 //var cardNoInput = document.getElementById("cardnumber");
 
-function getUserInput(){
-   return cardNoInput.value;  
-}
+//function getUserInput(){
+//   return cardNoInput.value;  
+//}
 
 function cardNumber_validation(){
-  var creditCardNo = getUserInput(), creditCardNoSplit = creditCardNo.split(""), sum = 0;
+  var creditCardNo = cardNoInput.value, creditCardNoSplit = creditCardNo.split(""), sum = 0;
   var singleNums = [], doubleNums = [], finalArry = undefined;
   var validCard = false;
   
   if((!/\d{15,16}(~\W[a-zA-Z])*$/g.test(creditCardNo)) || (creditCardNo.length > 16)){
      return false;  
   }
-
-  if(creditCardNo.length === 15){  //american express 
+  if(creditCardNo.length === 15){  
      for(var i = creditCardNoSplit.length-1; i>=0; i -= 1){
         if(i % 2 === 0){
            singleNums.push(creditCardNoSplit[i]);
@@ -274,7 +273,7 @@ function cardNumber_validation(){
         }
      }
   }else if(creditCardNo.length === 16){
-     for(var i = creditCardNoSplit.length-1; i>=0; i -= 1){
+     for(var i = creditCardNoSplit.length - 1; i >= 0; i -= 1){
         if(i % 2 !== 0){
            singleNums.push(creditCardNoSplit[i]);
         }else{
@@ -285,17 +284,13 @@ function cardNumber_validation(){
   doubleNums = doubleNums.join("").split("");  
   finalArry = doubleNums.concat(singleNums);
   
-  for(var j = 0; j<finalArry.length; j++){
+  for(var j = 0; j < finalArry.length; j++){
      sum += parseInt(finalArry[j]);
   }
   if(sum % 10 === 0){
      validCard = true;
   }
   return validCard;
-}
-
-function validateCard(){
-   
 }
 document.getElementById("cardnumber").addEventListener("blur", function(){
 document.getElementById("cardNo_error").innerHTML = cardNumber_validation();
@@ -304,35 +299,35 @@ document.getElementById("cardNo_error").innerHTML = cardNumber_validation();
 
 
 
-//  Same as Delivery information
-// document.getElementById("same_delivery").addEventListener("click", billingAddrValidation, true);
-// function billingAddrValidation(checked) {  
-// if (checked) {  
-// document.getElementById('BillingFirstName').value = fname.value; 
-// document.getElementById('BillingLastName').value = lname.value; 
-// document.getElementById('BillingPhoneNumber').value = phone_no.value; 
-// document.getElementById('BillingSpecifyList').value = specify_list.value;
-// document.getElementById('BillingSpecifyAddress').value = specify_addr.value;
-// document.getElementById('BillingAddressNo').value = addr_no.value;
-// document.getElementById('BillingAddress').value = staddress.value;   
-// document.getElementById('BillingCity').value = city_value.value;   
-// document.getElementById('BillingState').value = state_value.value;   
-// document.getElementById('BillingZip').value = zcode_value.value;     
-// } else {  
-// document.getElementById('BillingFirstName').value = '';
-// document.getElementById('BillingLastName').value = '';
-// document.getElementById('BillingPhoneNumber').value = '';
-// document.getElementById('BillingSpecifyList').value = '';
-// document.getElementById('BillingSpecifAddress').value = '';
-// document.getElementById('BillingAddressNo').value = '';
-// document.getElementById('BillingAddress').value = '';
-// document.getElementById('BillingCity').value = '';
-// document.getElementById('BillingState').value = '';
-// document.getElementById('BillingZip').value = '';
-// document.getElementById('BillingCountry').value = '';   
-// }  
-// }  
-  
+// Same as Delivery information
+//document.getElementById("same_delivery").addEventListener("click", billingAddrValidation, true);
+//function billingAddrValidation(checked) {  
+//if (checked) {  
+//document.getElementById('BillingFirstName').value = fname.value; 
+//document.getElementById('BillingLastName').value = lname.value; 
+//document.getElementById('BillingPhoneNumber').value = phone_no.value; 
+//document.getElementById('BillingSpecifyList').value = specify_list.value;
+//document.getElementById('BillingSpecifyAddress').value = specify_addr.value;
+//document.getElementById('BillingAddressNo').value = addr_no.value;
+//document.getElementById('BillingAddress').value = staddress.value;   
+//document.getElementById('BillingCity').value = city_value.value;   
+//document.getElementById('BillingState').value = state_value.value;   
+//document.getElementById('BillingZip').value = zcode_value.value;     
+//} else {  
+//document.getElementById('BillingFirstName').value = '';
+//document.getElementById('BillingLastName').value = '';
+//document.getElementById('BillingPhoneNumber').value = '';
+//document.getElementById('BillingSpecifyList').value = '';
+//document.getElementById('BillingSpecifAddress').value = '';
+//document.getElementById('BillingAddressNo').value = '';
+//document.getElementById('BillingAddress').value = '';
+//document.getElementById('BillingCity').value = '';
+//document.getElementById('BillingState').value = '';
+//document.getElementById('BillingZip').value = '';
+//document.getElementById('BillingCountry').value = '';   
+//}  
+//}  
+//  
 
 
 
